@@ -1,5 +1,11 @@
 # CAS Collaborations
 Packages and scripts built by volunteers of the Chinese Antibody Society
 
-# Python Package - Newsletter Parser 
-Using beautiful soup to make newsletters
+# List of Projects
+
+## Newsletter Parser
+**Description**: Using beautiful soup to generate html codes for newsletters
+
+**Package**: newsletter_parser
+
+**Example Usage**: newsletter_parser.ipynb
