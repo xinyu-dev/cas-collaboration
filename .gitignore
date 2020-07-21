@@ -1,6 +1,6 @@
 
 .DS_Store
-.idea
+.D
 __pycache__
 # ignore text files in output folders
 newsletter/output/*.txt
