@@ -7,7 +7,7 @@ Description: Pre-processing data generating the template for "journal news annou
 
 from pathlib import Path
 from datetime import date
-import bs4
+from bs4 import BeautifulSoup
 
 class JournalNews():
     """
@@ -33,27 +33,35 @@ class JournalNews():
         self.main_text=main_text
         self.add_notes_title=add_notes_title
         self.add_notes_text=add_notes_text
+        self.html_template="templates/New Article Alert.html"
 
-    def getJournalNews(self, template_soup):
+    def getJournalNews(self):
         """
         Main function that adds the above fields above to the template
-
-        :param template_soup: bs4 soup object of the original template
-        :return: bs4 soup object containing the html code of the modified template
+        :return: a feature in the object containing the html code of the modified template
         """
-        pass
+        with open(self.html_template) as fp:
+            self.modified_html = BeautifulSoup(fp, "html.parser")
 
-    def writeJournalNews(self, modified_soup, fn):
+        self.modified_html.find(id='date').string = self.date
+        self.modified_html.find(id='title').string = self.title
+        self.modified_html.find(id='editor_notes').string = self.editor_notes
+        self.modified_html.find(id='figure_caption').string = self.figure_caption
+        self.modified_html.find(id='url')['href'] = self.url
+        self.modified_html.find(id='main_text').string = self.main_text
+        self.modified_html.find(id='add_notes_title').string = self.add_notes_title
+        self.modified_html.find(id='add_notes_text').string = self.add_notes_text
+
+    def writeJournalNews(self, fn):
         """
         Write the output bs4 object from `getJournalNews()` to file;
-        :param modified_soup: bs4 soup object containing the html code of the modified template. Generally, this is the output of the getJournalNews function
-        :param fn: STR, file name (do NOT include .txt)
+        :param fn: STR, file prefix name (do NOT include .txt/.html)
         :return: None. Output will be written to 'output\' folder
         """
 
         # use formatter=None
-        soup = modified_soup.prettify(formatter=None)
-        with open(Path.cwd().parent.joinpath("output", str(date.today()) + ' ' + fn + '.txt'), "w") as f:
+        soup = self.modified_html.prettify(formatter=None)
+        with open(Path.cwd().joinpath("output", str(date.today()) + ' ' + fn + '.html'), "w") as f:
             f.write(soup)
 
 
