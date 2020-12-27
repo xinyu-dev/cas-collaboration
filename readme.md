@@ -20,4 +20,4 @@ Packages and scripts built by volunteers of the Chinese Antibody Society
 
 **Example output**
 ![](https://res.cloudinary.com/dwawcx2hl/image/upload/v1609040554/github/Screen_Shot_2020-12-26_at_10.42.12_PM_yjmlzj.png)
-*Attribution: picture is adpated from (Freepik author Graphics4U)[https://www.freepik.com/premium-vector/happy-new-year-2021-numbers-green-fir-branches-holiday-ornaments-white-background-greeting-card-promotion-poster-template_11250150.htm#position=0])
+*Attribution: picture is adpated from [Freepik author Graphics4U](https://www.freepik.com/premium-vector/happy-new-year-2021-numbers-green-fir-branches-holiday-ornaments-white-background-greeting-card-promotion-poster-template_11250150.htm#position=0)
