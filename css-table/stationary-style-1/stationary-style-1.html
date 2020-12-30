@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: white;
+        border-color:#43729f;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    table * {
+        position: relative;
+    }
+    table td, table th {
+        padding-left: 8px;
+    }
+    table thead tr {
+        height: 45px;
+        background: #43729f;
+        font-size: 16px;
+        color: white;
+    }
+    table tbody tr {
+        height: 48px;
+        border-bottom: 1px solid #43729f;
+    }
+    table tbody tr:last-child {
+        border-bottom: 1px solid #43729f;
+    }
+    table td, table th {
+        text-align: center;
+    }
+    table td.l, table th.l {
+        text-align: center;
+    }
+    table td.c, table th.c {
+        text-align: center;
+    }
+    table td.r, table th.r {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 35.5em) {
+        table {
+            display: block;
+        }
+        table > *, table tr, table td, table th {
+            display: block;
+        }
+        table thead {
+            display: none;
+        }
+        table tbody tr {
+            height: auto;
+            padding: 8px 0;
+        }
+        table tbody tr td {
+            padding-left: 45%;
+            margin-bottom: 12px;
+        }
+        table tbody tr td:last-child {
+            margin-bottom: 0;
+        }
+        table tbody tr td:before {
+            position: absolute;
+            font-weight: 700;
+            width: 40%;
+            left: 10px;
+            top: 0;
+        }
+        table tbody tr td:nth-child(1):before {
+            content: "Code";
+        }
+        table tbody tr td:nth-child(2):before {
+            content: "Stock";
+        }
+        table tbody tr td:nth-child(3):before {
+            content: "Cap";
+        }
+        table tbody tr td:nth-child(4):before {
+            content: "Inch";
+        }
+        table tbody tr td:nth-child(5):before {
+            content: "Box Type";
+        }
+    }
+    body {
+        background: white;
+        font: 400 14px "Montserrat";
+        padding: 20px;
+    }
+
+    blockquote {
+        color: white;
+        text-align: center;
+    }
+</style>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Item</th>
+        <th>Availability</th>
+        <th>Fee</th>
+        <th>Benefit</th>
+    </tr>
+    <thead>
+    <tbody>
+    <tr>
+        <td>Named Dinner Gala & Speech</td>
+        <td>1</td>
+        <td>$25,000</td>
+        <td>All diamond level benefits + Named Dinner + 10min speech</td>
+    </tr>
+    <tr>
+        <td>Named Luncheon</td>
+        <td>1</td>
+        <td>$20,000</td>
+        <td>All diamond level benefits + Named Badges</td>
+    </tr>
+    <tr>
+        <td>Badge Sponsor</td>
+        <td>1</td>
+        <td>$20,000</td>
+        <td>All diamond level benefits + Named Badges</td>
+    </tr>
+    <tr>
+        <td>Named Handbag</td>
+        <td>1</td>
+        <td>$20,000</td>
+        <td>All diamond level benefits + Named Handbag</td>
+    </tr>
+
+    </tbody>
+    <table/>
+
+
+</body>
+</html>
