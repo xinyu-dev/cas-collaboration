@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, Verdana, sans-serif;
+            color: #5c5c5c;
+            height: 100% !important;
+            width: 100% !important;
+            background-image: linear-gradient(to top right, #7ed4f4, #43729f, #6557A5);
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #header a {
+            color: wheat;
+        }
+
+        #main-table-content {
+            background: #FFFFFF;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        .main-table {
+            border: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .main-content {
+            border: 0;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 1em;
+        }
+
+        .table-block {
+            border-style: solid;
+            width: 100%;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: #E7E6E9;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        .table-block-ad {
+            border-style: None;
+            width: 100%;
+            border-radius: 10px;
+            border-color: #E7E6E9;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            background-color: #EAF9FD;
+        }
+
+        .table-block-ad-1 {
+            border-style: None;
+            width: 100%;
+            border-radius: 10px;
+            border-color: #E7E6E9;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            background-color: #FEF8DF;
+        }
+
+        .main-text {
+            font-size: 1rem;
+            padding: 0 1.2rem 0 1.2rem;
+            margin: 0;
+        }
+
+        .title-level-1 {
+            color: #6557A5;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0 1rem 1rem 0.5rem;
+            margin: 0;
+        }
+
+        .title-level-1 img {
+            width: 10%;
+            height: auto;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0;
+        }
+
+        .title-level-2 {
+            font-weight: bold;
+            padding: 0.5rem 0.5rem 0.5rem 0;
+        }
+
+        .ad-title {
+            color: #43729f;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0
+        }
+
+        .ad-title img {
+            width: 10%;
+            height: auto;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0;
+        }
+
+        .ad-title-1 {
+            color: #C7A105;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0
+        }
+
+        .ad-title-1 img {
+            width: 10%;
+            height: auto;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0;
+        }
+
+        /*set 479 for phones. Alternatively use 640 for smaller ipads. Larger ipads are around 749. Defaults to 479 */
+        /* must label all lines !important */
+        @media only screen and (max-width: 479px) {
+
+            body {
+                background-image: None !important;
+            }
+
+            #header a {
+                color: #0a0b0d !important;
+            }
+
+            #main-table-content {
+                padding: 0 !important;
+            }
+
+            .main-text {
+                font-size: 1rem !important;
+                padding: 0 0.5rem 0.5rem 0.5rem !important;
+                margin: 0 !important;
+            }
+
+            .title-level-1 {
+                text-align: center !important;
+                padding-bottom: 0.5rem !important;
+            }
+
+            .title-level-1 img {
+                display: block !important;
+                width: fit-content !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding-bottom: 0.5rem !important;
+            }
+
+            .ad-title {
+                text-align: center !important;;
+                padding-bottom: 0 !important;;
+            }
+
+            .ad-title img {
+                display: block !important;;
+                width: fit-content !important;;
+                margin-left: auto !important;;
+                margin-right: auto !important;;
+                padding-bottom: 0.5rem !important;;
+            }
+
+            .ad-title-1 {
+                text-align: center !important;;
+                padding-bottom: 0.5rem !important;;
+            }
+
+            .ad-title-1 img {
+                display: block !important;;
+                width: fit-content !important;;
+                margin-left: auto !important;;
+                margin-right: auto !important;;
+                padding-bottom: 0.5rem !important;;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+<table class="main-table" align="center">
+    <tr>
+        <td id="header">
+            <a href="*|ARCHIVE|*">If graphics not showing up, view this email in browser</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 0 0 0 0;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0"
+                   style="border: None; border-collapse: collapse; max-width:640px">
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="padding: 0 0 0 0">
+                        <a href="https://academic.oup.com/abt">
+                            <!----------------------------------------------------------------------------------
+                             header image source. If image is hosted on github repo, add `?raw=True` after url
+                            ----------------------------------------------------------------------------------->
+                            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1611626459/Newsletter/member-news-letter_r15dqp.png"
+                                 alt="Logo" width="100%">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="main-table-content">
+                        <table class="main-content">
+                            <tr>
+                                <td style="color: #FFFFFF!important; padding: 0.5rem 0 0.5rem 0; border-radius: 1.2em;"
+                                    align="center" bgcolor="#6557A5">
+                                    <b>Feb 14, 2021</b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="table-block-ad">
+                                        <tr>
+                                            <td class="ad-title">
+                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1611638740/Newsletter/user-astronaut-solid_v2cf2g.png"
+                                                     width=5%>
+                                                CAS Volunteer Recruiting
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <p>
+                                                    Currently our volunteer positions are open for application! We
+                                                    invite you to join our global volunteer team. The benefits include
+                                                    meeting and networking with like-minded professionals, opportunities
+                                                    to organize top-notch conferences and meeting with industry leaders,
+                                                    attending volunteer-only career panels and social activities. Plus,
+                                                    all volunteers enjoy one year of free CAS membership. <a
+                                                        href="https://chineseantibody.formstack.com/forms/2021volunteersignup">Please
+                                                    submit your application here</a>. We look forward to meeting you!
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <table class="table-block">
+                                        <tr>
+                                            <td class="title-level-1">
+                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1611638910/Newsletter/chalkboard-teacher-solid_cwm2fy.png">
+                                                Upcoming Conferences
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <span class="title-level-2">January 19-21: Peptalk</span>
+                                                <p>
+                                                    On January 19-21: Peptalk Virtual Conference & Expo was successfully
+                                                    held online by the Cambridge Healthtech Institute (CHI). The virtual
+                                                    conference covered topics including protein engineering &
+                                                    development, protein & antibody therapeutics, characterization &
+                                                    analytics, aggregation & impurities, process technologies &
+                                                    purification, and biotherapeutic expression & production. CAS
+                                                    presented a virtual booth and a conference report will be available
+                                                    soon by CAS volunteers.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <span class="title-level-2">December 14-16: Antibody Engineering & Therapeutics (AET) </span>
+                                                <p>
+                                                    On December 14-16, the Antibody Engineering & Therapeutics (AET)
+                                                    virtual meeting was successfully held online by the Antibody
+                                                    Society. This meeting covered the lasted antibody science,
+                                                    technologies, and partners needed to accelerate next generation
+                                                    antibodies towards commercial success. Some hot topics included: T
+                                                    cell receptors and cytokines; bispecific T cell engagers; responding
+                                                    to the COVID-19 pandemic with antibodies; and inducible activation
+                                                    of antibodies to enhance therapeutic index. Click here for a report
+                                                    prepared by CAS volunteers.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <span class="title-level-2">December 5, 2020: mTalks series “Revisit the Perspectives of Bispecific Antibodies under the COVID-19 Pandemic”virtual symposium </span>
+                                                <p>
+                                                    On December 5, the 2020 mTalks series “Revisit the Perspectives of
+                                                    Bispecific Antibodies under the COVID-19 Pandemic”virtual symposium
+                                                    was successfully held online by CAS. Ten speakers from both industry
+                                                    and academia shared their insights in topics of bispecific
+                                                    antibody-based therapeutics, including novel targets and molecular
+                                                    formats, COVID-19 related therapeutics, regulatory considerations,
+                                                    patent protection strategies, etc. Playback is open for CAS members.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="table-block">
+
+                                        <tr>
+                                            <td class="title-level-1">
+                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1611638977/Newsletter/calendar-check-solid_uvaw7z.png"
+                                                     width=5%>
+                                                Past Webinars
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="main-text">
+                                                <span class="title-level-2">January 30: Challenges and insights of early phase clinical development in oncology</span>
+                                                <p>
+                                                    On January 30, Dr. Yaping Shou, Seasoned Clinical Drug Developer and
+                                                    former CMO of Trillium Therapeutics, introduced the principles and
+                                                    processes of early clinical development and unique features
+                                                    associated with the designs of oncology early phase trials. Case
+                                                    studies of a few oncology clinical assets were presented to
+                                                    highlight the challenges in early development and offer potential
+                                                    alternatives or counteractive measures to address issues. Click here
+                                                    for details.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <span class="title-level-2">December 19: The Investment Outlook for Biotech in China </span>
+                                                <p>
+                                                    On December 19, Brad Loncar, CEO of Loncar Investments, discussed
+                                                    recent trends and catalyzing factors for the biotech sector in
+                                                    China, recent partnering deals and what they might signal, the IPO
+                                                    environment, and the overall investment landscape, etc. Click here
+                                                    for details.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+
+                                                <span class="title-level-2">Nov 20: Impact of CFIUS/FIRRMA and Export Control on Biotech Industry </span>
+                                                <p>
+                                                    On November 20, Catherin X. Pan-Giordano, Partner of Dorsey &
+                                                    Whitney LLP, talked about the final regulations implementing the
+                                                    Foreign Investment Risk Review Modernization Act (FIRRMA) of 2018.
+                                                    The new regulations expand the jurisdiction of the Committee on
+                                                    Foreign Investment in the United States (CFIUS) to review foreign
+                                                    investments. The new regulations have a significant impact on the
+                                                    biotech industry, as biotech companies raising funds and investors
+                                                    will need to carefully consider whether their transactions are
+                                                    subject to CFIUS review. Click here for
+                                                    details. </p>                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="table-block-ad-1">
+                                        <tr>
+                                            <td class="ad-title-1">
+                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1611639137/Newsletter/bullhorn-solid_fqiz1b.png"
+                                                     width="5%">
+                                                Calling for Article
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <p>
+                                                    On January 30, Dr. Yaping Shou, Seasoned Clinical Drug Developer and
+                                                    former CMO of Trillium Therapeutics, introduced the principles and
+                                                    processes of early clinical development and unique features
+                                                    associated with the designs of oncology early phase trials. Case
+                                                    studies of a few oncology clinical assets were presented to
+                                                    highlight the challenges in early development and offer potential
+                                                    alternatives or counteractive measures to address issues. Click here
+                                                    for details.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="padding: 10px 0px 0px 0px">
+                        <a href="https://chineseantibody.org/covid-19-track/">
+                            <!----------------------------------------------------------------------------------
+                             footer image source. If image is hosted on github repo, add `?raw=True` after url
+                            ----------------------------------------------------------------------------------->
+                            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1599439311/conference/2020%20meeting/tracker_email_jumbotron-01_zaah9w.png"
+                                 alt="Logo" width="100%">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor=white style="padding: 15px 20px 15px 20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="color: #43729f; font-family: Verdana, sans-serif; font-size: 14px;"
+                                    width="75%">
+                                    <p>Chinese Antibody Society 2021. All Rights Reserved </p>
+                                    <p>Follow us on Wechat: <b>chinese_antibody</b> or <a
+                                            href="https://chineseantibody.org/">visit website</a></p>
+                                    <p><a href="*|UNSUB|*">Unsubscribe from this list</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/wechat_m1vetn.png"
+                                                     alt="Wechat" width="38" height="38" style="display: block;"
+                                                     border="0"/>
+                                            </td>
+
+                                            <!--spacer between logos-->
+                                            <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+
+                                            <td style="font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <a href="https://twitter.com/ChineseAntibody" style="color: #ffffff;">
+                                                    <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/twitter_pooabc.png"
+                                                         alt="Twitter" width="38" height="38" style="display: block;"
+                                                         border="0"/>
+                                                </a>
+                                            </td>
+
+                                            <!--spacer between logos-->
+                                            <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+
+                                            <td style="font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <a href="https://www.linkedin.com/company/chineseantibodysociety/"
+                                                   style="color: #ffffff;">
+                                                    <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/linkedin_wtjojb.png"
+                                                         alt="Linkedin" width="38" height="38" style="display: block;"
+                                                         border="0"/>
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
