@@ -9,7 +9,9 @@
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <style type="text/css">
 
         html {
@@ -140,14 +142,20 @@
         .center-btn{
             text-align: center;
         }
-        button{
-            background-color: #6557A5;
+        .button-1,
+        .button-2 {
             color: #FFFFFF;
             border-radius: 10px;
             border-width: 0px;
             padding: 0.5rem;
             cursor:pointer;
             margin-bottom: 0.5rem;
+        }
+        .button-1{
+            background-color: #43729f;
+        }
+        .button-2 {
+            background-color: #C7A105;
         }
 
         /*set 479 for phones. Alternatively use 640 for smaller ipads. Larger ipads are around 749. Defaults to 479 */
@@ -272,7 +280,7 @@
                                         </tr>
                                         <tr>
                                             <td class="center-btn">
-                                                <button onclick="location.href='https://chineseantibody.formstack.com/forms/2021volunteersignup'" type="button">
+                                                <button class="button-1" onclick="location.href='https://chineseantibody.formstack.com/forms/2021volunteersignup'" type="button">
                                                     Submit Application</button>
                                             </td>
                                         </tr>
@@ -419,11 +427,18 @@
                                                     associated with the designs of oncology early phase trials. Case
                                                     studies of a few oncology clinical assets were presented to
                                                     highlight the challenges in early development and offer potential
-                                                    alternatives or counteractive measures to address issues. Click here
-                                                    for details.
+                                                    alternatives or counteractive measures to address issues.
                                                 </p>
                                             </td>
                                         </tr>
+
+                                        <tr>
+                                            <td class="center-btn">
+                                                <button class = "button-2" onclick="location.href='https://academic.oup.com/abt" type="button">
+                                                    Submit Your Research</button>
+                                            </td>
+                                        </tr>
+
                                     </table>
                                 </td>
                             </tr>
