@@ -1,66 +1,314 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, Verdana, sans-serif;
+            color: #5c5c5c;
+            background-color: #fcf6f0;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #header a {
+            color: #5c5c5c;
+        }
+
+        #main-table-content {
+            background: #FFFFFF;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        .main-table {
+            border: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .main-content {
+            border: 0;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 1em;
+        }
+
+        .table-block {
+            border-style: solid;
+            width: 100%;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: #E7E6E9;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        .table-block-ad {
+            border-style: None;
+            width: 100%;
+            border-radius: 10px;
+            border-color: #E7E6E9;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            background-color: #fff7f7;
+        }
+
+        .table-block-ad-1 {
+            border-style: None;
+            width: 100%;
+            border-radius: 10px;
+            border-color: #E7E6E9;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            background-color: #FEF8DF;
+        }
+
+        .main-text {
+            font-size: 1rem;
+            padding: 0 1.2rem 0 1.2rem;
+            margin: 0;
+        }
+
+        .title-level-1 {
+            color: #6557A5;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0 1rem 1rem 0.5rem;
+            margin: 0;
+        }
+
+        .title-level-1 img {
+            width: 10%;
+            height: auto;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0;
+        }
+
+        .title-level-2 {
+            font-weight: bold;
+            padding: 0.5rem 0.5rem 0.5rem 0;
+        }
+
+        .ad-title {
+            color: #CC4857;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0
+        }
+
+        .ad-title img {
+            width: 10%;
+            height: auto;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0;
+        }
+
+        .ad-title-1 {
+            color: #C7A105;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0
+        }
+
+        .ad-title-1 img {
+            width: 10%;
+            height: auto;
+            padding: 0 1rem 0 0.5rem;
+            margin: 0;
+        }
+        .center-btn{
+            text-align: center;
+        }
+        .button-1,
+        .button-2 {
+            color: #FFFFFF;
+            border-radius: 10px;
+            border-width: 0px;
+            padding: 0.5rem;
+            cursor:pointer;
+            margin-bottom: 0.5rem;
+            font-family: Montserrat, Verdana, sans-serif;
+        }
+        .button-1{
+            background-color: #43729f;
+        }
+        .button-2 {
+            background-color: #C7A105;
+        }
+
+        /*set 479 for phones. Alternatively use 640 for smaller ipads. Larger ipads are around 749. Defaults to 479 */
+        /* must label all lines !important */
+        @media only screen and (max-width: 640px) {
+
+            body {
+                background-image: None !important;
+            }
+
+            #header a {
+                color: #5c5c5c !important;
+            }
+
+            #main-table-content {
+                padding: 0 !important;
+            }
+
+            .main-text {
+                font-size: 1rem !important;
+                padding: 0 0.5rem 0.5rem 0.5rem !important;
+                margin: 0 !important;
+            }
+
+            .title-level-1 {
+                text-align: center !important;
+                padding-bottom: 0.5rem !important;
+            }
+
+            .title-level-1 img {
+                display: block !important;
+                width: fit-content !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding-bottom: 0.5rem !important;
+            }
+
+            .ad-title {
+                text-align: center !important;;
+                padding-bottom: 0 !important;;
+            }
+
+            .ad-title img {
+                display: block !important;;
+                width: fit-content !important;;
+                margin-left: auto !important;;
+                margin-right: auto !important;;
+                padding-bottom: 0.5rem !important;;
+            }
+
+            .ad-title-1 {
+                text-align: center !important;;
+                padding-bottom: 0.5rem !important;;
+            }
+
+            .ad-title-1 img {
+                display: block !important;;
+                width: fit-content !important;;
+                margin-left: auto !important;;
+                margin-right: auto !important;;
+                padding-bottom: 0.5rem !important;;
+            }
+        }
+    </style>
+
 </head>
-<body style="margin: 0; padding: 0;">
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+<body>
+<table class="main-table" align="center">
+<!--    <tr>-->
+<!--        <td id="header">-->
+<!--            <a href="*|ARCHIVE|*">Problem displaying graphics? View this email in browser</a>-->
+<!--        </td>-->
+<!--    </tr>-->
     <tr>
-        <td style="padding: 10px 0 30px 0;">
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #cccccc; border-collapse: collapse;">
+        <td style="padding: 0 0 0 0;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0"
+                   style="border: None; border-collapse: collapse; max-width:640px">
+
                 <tr>
-                    <td align="center" bgcolor="#ffffff" style="padding: 10px 0px 0px 0px">
+                    <td align="center" bgcolor="#ffffff" style="padding: 0 0 0 0">
                             <!----------------------------------------------------------------------------------
                              header image source. If image is hosted on github repo, add `?raw=True` after url
                             ----------------------------------------------------------------------------------->
-                            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1608926656/emails/1191_Converted_-01_rivjv3.png" alt="Logo" width="100%">
+                            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1613883784/Newsletter/webinar_template_no_border-01_l0zdwq.png"
+                                 alt="Logo" width="100%">
+
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#1e2c3f" style="padding: 30px 30px 40px 30px;">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                                <td style="color: white; font-family: Verdana, sans-serif; font-size: 26px; padding: 30px 10px 30px 10px ">
-                                    <!-----------------------------------------------------------------
-                                                             Title
-                                    ----------------------------------------------------------------->
-                                    华人抗体协会感谢你的支持!
-                                </td>
-                            </tr>
-
+                    <td id="main-table-content">
+                        <table class="main-content">
 
                             <tr>
-                                <td style="padding: 10px 0 30px 0; color: white; font-family: Geneva, sans-serif; font-size: 16px; line-height: 20px;">
-                                    <!-----------------------------------------------------------------------------------------------------------------
-                                     Main text. Reminder on tags used for formatting:
-                                     - Break down into paragraphs using <p>.
-                                     - Bold <b>, Italic <i>,
-                                     - Subscript <sub>, Superscript <sup>
-                                     - Registered trademark:  &reg
-                                     - Copyright mark: &copy
-                                    ------------------------------------------------------------------------------------------------------------------->
-                                    <p id = "message"></p>
+                                <td>
+                                    <table class="table-block-ad">
+                                        <tr align="center">
+                                            <td class="ad-title">
+                                                write your title here
+                                                华人抗体协会恭贺您<br>新春快乐！
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main-text">
+                                                <p id="message">
+                                                write your content here
+                                                    <b>abcd</b>
+                                                <i>dsdf</i>
+                                                <a href="www.google.com">Visit this link</a>
+
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
-
                         </table>
                     </td>
                 </tr>
+
                 <tr>
-                    <td bgcolor=white style="padding: 30px 30px 30px 30px;">
+                    <td align="center" bgcolor="#ffffff" style="padding: 10px 0px 0px 0px">
+                        <a href="https://chineseantibody.org/covid-19-track/">
+                            <!----------------------------------------------------------------------------------
+                             footer image source. If image is hosted on github repo, add `?raw=True` after url
+                            ----------------------------------------------------------------------------------->
+                            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1599439311/conference/2020%20meeting/tracker_email_jumbotron-01_zaah9w.png"
+                                 alt="Logo" width="100%">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor=white style="padding: 15px 20px 15px 20px;">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                                <td style="color: #43729f; font-family: Verdana, sans-serif; font-size: 14px;" width="75%">
-                                    <p>&copy Chinese Antibody Society 2020. </p>
-                                    <p>Follow us on Wechat: <b>chinese_antibody</b> or <a href="https://chineseantibody.org/">visit website</a></p>
+                                <td style="color: #43729f; font-family: Verdana, sans-serif; font-size: 14px;"
+                                    width="75%">
+                                    <p>Chinese Antibody Society 2021. All Rights Reserved </p>
+                                    <p>Follow us on Wechat: <b>chinese_antibody</b> or <a
+                                            href="https://chineseantibody.org/">visit website</a></p>
+                                    <p><a href="*|UNSUB|*">Unsubscribe from this list</a></p>
                                 </td>
-                                <td align="right" width="25%">
+                            </tr>
+                            <tr>
+                                <td align="left">
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td style="font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;">
-                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/wechat_m1vetn.png" alt="Wechat" width="38" height="38" style="display: block;" border="0" />
+                                                <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/wechat_m1vetn.png"
+                                                     alt="Wechat" width="38" height="38" style="display: block;"
+                                                     border="0"/>
                                             </td>
 
                                             <!--spacer between logos-->
@@ -68,7 +316,9 @@
 
                                             <td style="font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;">
                                                 <a href="https://twitter.com/ChineseAntibody" style="color: #ffffff;">
-                                                    <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/twitter_pooabc.png" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
+                                                    <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/twitter_pooabc.png"
+                                                         alt="Twitter" width="38" height="38" style="display: block;"
+                                                         border="0"/>
                                                 </a>
                                             </td>
 
@@ -76,8 +326,11 @@
                                             <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
 
                                             <td style="font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;">
-                                                <a href="https://www.linkedin.com/company/chineseantibodysociety/" style="color: #ffffff;">
-                                                    <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/linkedin_wtjojb.png" alt="Linkedin" width="38" height="38" style="display: block;" border="0" />
+                                                <a href="https://www.linkedin.com/company/chineseantibodysociety/"
+                                                   style="color: #ffffff;">
+                                                    <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589466031/Logo/linkedin_wtjojb.png"
+                                                         alt="Linkedin" width="38" height="38" style="display: block;"
+                                                         border="0"/>
                                                 </a>
                                             </td>
 
@@ -85,6 +338,7 @@
                                     </table>
                                 </td>
                             </tr>
+
                         </table>
                     </td>
                 </tr>

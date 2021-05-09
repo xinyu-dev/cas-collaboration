@@ -40,7 +40,7 @@ soup=bs(contents, "html.parser")
 
 # append inside
 soup.find("div", id="titleSponsorStarts").append("abc")
-# result: '<div class="row" id="titleSponsorStarts">abc</div><div class="row"></div>'
+# cas-result: '<div class="row" id="titleSponsorStarts">abc</div><div class="row"></div>'
 ```
 
 
@@ -55,7 +55,7 @@ soup=bs(myString, 'html.parser')
 
 soup.find("div", id="titleSponsorStarts").append("ABC")
 
-# result: <div class="row" id="titleSponsorStarts">abcABC</div><div class="row"></div>
+# cas-result: <div class="row" id="titleSponsorStarts">abcABC</div><div class="row"></div>
 ```
 
 
@@ -68,7 +68,7 @@ soup=bs(myString, "html.parser")
 
 soup.find("ul").string.insert_before("DEF")
 
-# result: <ul id="sideBanners">DEFabc</ul>
+# cas-result: <ul id="sideBanners">DEFabc</ul>
 ```
 
 ## Insert after tag
@@ -80,7 +80,7 @@ soup=bs(myString, "html.parser")
 
 soup.find("div", id="titleSponsorStarts").insert_after("def")
 
-# result: '<div class="row" id="titleSponsorStarts"></div>def<div class="row"></div>'
+# cas-result: '<div class="row" id="titleSponsorStarts"></div>def<div class="row"></div>'
 
 ```
 

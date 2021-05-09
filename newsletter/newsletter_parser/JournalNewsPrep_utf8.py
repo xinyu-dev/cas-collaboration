@@ -2,7 +2,7 @@
 JournalNewsPrep.py
 Author: X Yu, Meng Wu
 Date: 7-17-20
-Description: Pre-processing data generating the template for "journal news announcement" emails. Most of these elements do not neeed to be modified often.
+Description: Pre-processing cas-example generating the template for "journal news announcement" emails. Most of these elements do not neeed to be modified often.
 """
 
 from pathlib import Path
