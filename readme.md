@@ -27,4 +27,11 @@ Packages and scripts built by volunteers of the Chinese Antibody Society
 
 **Code**: See everything in **css-table** folder
 
+## Quaterly Newsletter
+
+**Description**: html template for member’s quarterly newsletter 
+
+**Code**: See everything in **newsletter-html/quarterly-newsletter.html** folder
+
+![](https://res.cloudinary.com/dwawcx2hl/image/upload/v1611808992/github/Screen_Shot_2021-01-27_at_11.42.40_PM_oidqnj.png)
 
