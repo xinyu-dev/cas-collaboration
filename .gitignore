@@ -7,7 +7,7 @@ cas-result/
 cas-results/
 cas-template/
 cas-templates/
-batch-email/notebooks/*
+batch-email/notebooks/
 
 newsletter/output/*.txt
 newsletter/output/*.html
